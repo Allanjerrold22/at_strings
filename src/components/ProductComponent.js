@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
+import CustomCard from "./ui component/CustomCard";
 
 const ProductComponent = () => {
 
@@ -38,7 +39,7 @@ const ProductComponent = () => {
               flexDirection: "row",
               borderRadius: 20,
               justifyContent: "space-between",
-              height:"60%"
+              height:"60%",
             }}
           >
             <div
@@ -47,17 +48,19 @@ const ProductComponent = () => {
                 alignItems: "space-between",
                 flexDirection: "column",
                 justifyContent: "space-between",
+                marginLeft:24
+
               }}
             >
-              <p style={{ color: "white" }}>
+              <p style={{ color: "white", fontSize:32, fontWeight:500 , textAlign:'left', margin:0, paddingTop:48}}>
                 Exclusively <br />
                 made for <br />
                 Couples
               </p>
 
-              <h2 style={{ color: "white" }}>Memories</h2>
+              <h2 style={{ color: "white" ,fontSize:62, fontWeight:500 , textAlign:'left', margin:0,paddingBottom:64}}>Memories</h2>
             </div>
-            <div style={{ alignItems:'space-between', justifyContent:'space-between', display:'flex', flexDirection:'column'}}>
+            <div style={{ alignItems:'flex-end', justifyContent:'space-between', display:'flex', flexDirection:'column'}}>
               <div
                 style={{
                   backgroundColor: "#E26D9E",
@@ -67,13 +70,15 @@ const ProductComponent = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   display: "flex",
+                  marginTop:48,
+                  marginRight:24
                 }}
               >
                 <p style={{ color: "white" }}>Bestsellers</p>
               </div>
               <img
                 src="love.png"
-                style={{ height: 200}}
+                style={{ height: "70%", marginRight:24}}
               />
             </div>
           </div>
@@ -97,22 +102,23 @@ const ProductComponent = () => {
                 flexDirection: "row",
                 justifyContent: "space-between",
                 alignItems: "center",
+                
               }}
             >
               <img
                 src="paws.png"
-                style={{ height: 120, alignSelf: "center", marginTop: 32 }}
+                style={{ height: "40%", alignSelf: "center", marginLeft:24}}
               />
               <div
                 className={"paws-text"}
                 style={{
                   display: "flex",
                   flexDirection: "column",
-                  alignSelf: "flex-end",
+                  marginRight:24
                 }}
               >
-                <h3>Pet Lovers</h3>
-                <p>String Arts</p>
+                <h3 style={{paddingTop:12, fontSize:24, fontWeight:600, margin:0, marginBottom:12}}>Pet Lovers</h3>
+                <p style={{fontSize:18, fontWeight:400, color:"#5F5F67", margin:0}}>String Arts</p>
               </div>
             </div>
             <div className="logoart" style={{ width: "48%", borderRadius: 20 }}>
@@ -122,11 +128,12 @@ const ProductComponent = () => {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
-                  justifyContent: "space-between",
+                  justifyContent: "center",
+                  height:"100%"
                 }}
               >
-                <h3>Logo</h3>
-                <p>String Arts</p>
+                <h3 style={{paddingTop:12, fontSize:24, fontWeight:600, margin:0, marginBottom:12}}>Logo</h3>
+                <p style={{fontSize:18, fontWeight:400, color:"#5F5F67", margin:0}}>String Arts</p>
               </div>
             </div>
           </div>
@@ -295,6 +302,7 @@ const ProductComponent = () => {
           </div>
         </div>
       </div>
+      <h1 style={{ padding: 28, fontWeight: "400",textAlign:'left' }}>Best selling</h1>
       <div
   style={{ overflowX:"auto", whiteSpace:'nowrap', display:'flex',flexDirection:'row' }}
   onWheel={(e) => {
@@ -319,227 +327,21 @@ const ProductComponent = () => {
       // large scrolls with smooth animation behavior will lag, so switch to auto
       behavior: strength > 70 ? "auto" : "smooth",
     });
-  }}
->
-<div style={{width:220}}>
-    <div style={{width:220, height:220, backgroundColor:"#F0D5BA", borderRadius:20, padding:20}}>
+  }}>
 
-        <img
-        src="penmani.png"
-        style={{width:120, resize:'contain'}}
-        />
 
-    </div>
+  <CustomCard/>
+  <CustomCard/>
+  <CustomCard/>
+  <CustomCard/>
+  <CustomCard/>
+  <CustomCard/>
 
-    <text style={{fontSize:14,fontWeight:400, color:"#5F5F67"}}>Pet string art </text> 
-    <br/>
-    <text style={{alignItems:'center',fontSize:16,fontWeight:500, color:'black'}}>Crawling Cat  (8In x 12In)</text> 
-    <div style={{display:'flex',flexDirection:'row', justifyContent:'center',}}>
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"#5F5F67", marginRight:4, textDecoration:'line-through'}}>hello</text> 
-    
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"black", marginLeft:4}}>hello</text> 
 
-    </div>
 
-</div>
 
-<div style={{width:220}}>
-    <div style={{width:220, height:220, backgroundColor:"#F0D5BA", borderRadius:20, padding:20}}>
-        
-        <img
-        src="penmani.png"
-        style={{width:120, resize:'contain'}}
-        />
 
-    </div>
 
-    <text style={{fontSize:14,fontWeight:400, color:"#5F5F67"}}>Pet string art </text> 
-    <br/>
-    <text style={{alignItems:'center',fontSize:16,fontWeight:500, color:'black'}}>Crawling Cat  (8In x 12In)</text> 
-    <div style={{display:'flex',flexDirection:'row', justifyContent:'center',}}>
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"#5F5F67", marginRight:4, textDecoration:'line-through'}}>hello</text> 
-    
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"black", marginLeft:4}}>hello</text> 
-
-    </div>
-
-</div>
-
-<div style={{width:220}}>
-    <div style={{width:220, height:220, backgroundColor:"#F0D5BA", borderRadius:20, padding:20}}>
-        
-        <img
-        src="penmani.png"
-        style={{width:120, resize:'contain'}}
-        />
-
-    </div>
-
-    <text style={{fontSize:14,fontWeight:400, color:"#5F5F67"}}>Pet string art </text> 
-    <br/>
-    <text style={{alignItems:'center',fontSize:16,fontWeight:500, color:'black'}}>Crawling Cat  (8In x 12In)</text> 
-    <div style={{display:'flex',flexDirection:'row', justifyContent:'center',}}>
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"#5F5F67", marginRight:4, textDecoration:'line-through'}}>hello</text> 
-    
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"black", marginLeft:4}}>hello</text> 
-
-    </div>
-
-</div>
-
-<div style={{width:220}}>
-    <div style={{width:220, height:220, backgroundColor:"#F0D5BA", borderRadius:20, padding:20}}>
-        
-        <img
-        src="penmani.png"
-        style={{width:120, resize:'contain'}}
-        />
-
-    </div>
-
-    <text style={{fontSize:14,fontWeight:400, color:"#5F5F67"}}>Pet string art </text> 
-    <br/>
-    <text style={{alignItems:'center',fontSize:16,fontWeight:500, color:'black'}}>Crawling Cat  (8In x 12In)</text> 
-    <div style={{display:'flex',flexDirection:'row', justifyContent:'center',}}>
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"#5F5F67", marginRight:4, textDecoration:'line-through'}}>hello</text> 
-    
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"black", marginLeft:4}}>hello</text> 
-
-    </div>
-
-</div>
-
-<div style={{width:220}}>
-    <div style={{width:220, height:220, backgroundColor:"#F0D5BA", borderRadius:20, padding:20}}>
-        
-        <img
-        src="penmani.png"
-        style={{width:120, resize:'contain'}}
-        />
-
-    </div>
-
-    <text style={{fontSize:14,fontWeight:400, color:"#5F5F67"}}>Pet string art </text> 
-    <br/>
-    <text style={{alignItems:'center',fontSize:16,fontWeight:500, color:'black'}}>Crawling Cat  (8In x 12In)</text> 
-    <div style={{display:'flex',flexDirection:'row', justifyContent:'center',}}>
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"#5F5F67", marginRight:4, textDecoration:'line-through'}}>hello</text> 
-    
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"black", marginLeft:4}}>hello</text> 
-
-    </div>
-
-</div>
-
-<div style={{width:220}}>
-    <div style={{width:220, height:220, backgroundColor:"#F0D5BA", borderRadius:20, padding:20}}>
-        
-        <img
-        src="penmani.png"
-        style={{width:120, resize:'contain'}}
-        />
-
-    </div>
-
-    <text style={{fontSize:14,fontWeight:400, color:"#5F5F67"}}>Pet string art </text> 
-    <br/>
-    <text style={{alignItems:'center',fontSize:16,fontWeight:500, color:'black'}}>Crawling Cat  (8In x 12In)</text> 
-    <div style={{display:'flex',flexDirection:'row', justifyContent:'center',}}>
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"#5F5F67", marginRight:4, textDecoration:'line-through'}}>hello</text> 
-    
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"black", marginLeft:4}}>hello</text> 
-
-    </div>
-
-</div>
-
-<div style={{width:220}}>
-    <div style={{width:220, height:220, backgroundColor:"#F0D5BA", borderRadius:20, padding:20}}>
-        
-        <img
-        src="penmani.png"
-        style={{width:120, resize:'contain'}}
-        />
-
-    </div>
-
-    <text style={{fontSize:14,fontWeight:400, color:"#5F5F67"}}>Pet string art </text> 
-    <br/>
-    <text style={{alignItems:'center',fontSize:16,fontWeight:500, color:'black'}}>Crawling Cat  (8In x 12In)</text> 
-    <div style={{display:'flex',flexDirection:'row', justifyContent:'center',}}>
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"#5F5F67", marginRight:4, textDecoration:'line-through'}}>hello</text> 
-    
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"black", marginLeft:4}}>hello</text> 
-
-    </div>
-
-</div>
-
-<div style={{width:220}}>
-    <div style={{width:220, height:220, backgroundColor:"#F0D5BA", borderRadius:20, padding:20}}>
-        
-        <img
-        src="penmani.png"
-        style={{width:120, resize:'contain'}}
-        />
-
-    </div>
-
-    <text style={{fontSize:14,fontWeight:400, color:"#5F5F67"}}>Pet string art </text> 
-    <br/>
-    <text style={{alignItems:'center',fontSize:16,fontWeight:500, color:'black'}}>Crawling Cat  (8In x 12In)</text> 
-    <div style={{display:'flex',flexDirection:'row', justifyContent:'center',}}>
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"#5F5F67", marginRight:4, textDecoration:'line-through'}}>hello</text> 
-    
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"black", marginLeft:4}}>hello</text> 
-
-    </div>
-
-</div>
-
-<div style={{width:220}}>
-    <div style={{width:220, height:220, backgroundColor:"#F0D5BA", borderRadius:20, padding:20}}>
-        
-        <img
-        src="penmani.png"
-        style={{width:120, resize:'contain'}}
-        />
-
-    </div>
-
-    <text style={{fontSize:14,fontWeight:400, color:"#5F5F67"}}>Pet string art </text> 
-    <br/>
-    <text style={{alignItems:'center',fontSize:16,fontWeight:500, color:'black'}}>Crawling Cat  (8In x 12In)</text> 
-    <div style={{display:'flex',flexDirection:'row', justifyContent:'center',}}>
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"#5F5F67", marginRight:4, textDecoration:'line-through'}}>hello</text> 
-    
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"black", marginLeft:4}}>hello</text> 
-
-    </div>
-
-</div>
-
-<div style={{width:220}}>
-    <div style={{width:220, height:220, backgroundColor:"#F0D5BA", borderRadius:20, padding:20}}>
-        
-        <img
-        src="penmani.png"
-        style={{width:120, resize:'contain'}}
-        />
-
-    </div>
-
-    <text style={{fontSize:14,fontWeight:400, color:"#5F5F67"}}>Pet string art </text> 
-    <br/>
-    <text style={{alignItems:'center',fontSize:16,fontWeight:500, color:'black'}}>Crawling Cat  (8In x 12In)</text> 
-    <div style={{display:'flex',flexDirection:'row', justifyContent:'center',}}>
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"#5F5F67", marginRight:4, textDecoration:'line-through'}}>hello</text> 
-    
-    <text style={{alignItems:'center',fontSize:14,fontWeight:400, color:"black", marginLeft:4}}>hello</text> 
-
-    </div>
-
-</div>
 
 
 
