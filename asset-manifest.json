@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Allanjerrold22/at_strings/static/css/main.110f0072.css",
-    "main.js": "/Allanjerrold22/at_strings/static/js/main.22fc1c9c.js",
-    "index.html": "/Allanjerrold22/at_strings/index.html",
-    "main.110f0072.css.map": "/Allanjerrold22/at_strings/static/css/main.110f0072.css.map",
-    "main.22fc1c9c.js.map": "/Allanjerrold22/at_strings/static/js/main.22fc1c9c.js.map"
+    "main.css": "/static/css/main.110f0072.css",
+    "main.js": "/static/js/main.22fc1c9c.js",
+    "index.html": "/index.html",
+    "main.110f0072.css.map": "/static/css/main.110f0072.css.map",
+    "main.22fc1c9c.js.map": "/static/js/main.22fc1c9c.js.map"
   },
   "entrypoints": [
     "static/css/main.110f0072.css",
