@@ -1,9 +1,12 @@
 import * as React from 'react';
 
-import { Card,CardActionArea,CardContent,Typography,CardMedia } from '@mui/material';
+// import { Card,CardActionArea,CardContent,Typography,CardMedia } from '@mui/material';
 
 const CustomCard = ()=>{
     return(
+        <div>
+
+        </div>
 
         // <CCard style={{width:'18rem'}}>
         //     <CCardImage orientation="center">
@@ -15,28 +18,28 @@ const CustomCard = ()=>{
         // </CCard>
 
 
-        <Card sx={{ width: 345, borderWidth:0}} style={{marginLeft:20,marginRight:20,marginBottom:20}}>
-        <CardActionArea>
-        <CardMedia
+    //     <Card sx={{ width: 345, borderWidth:0}} style={{marginLeft:20,marginRight:20,marginBottom:20}}>
+    //     <CardActionArea>
+    //     <CardMedia
 
-          component="img"
-          height="200"
-          image="penmani.png"
-          style={{objectFit:'contain',backgroundColor:'#F0D5BA',borderRadius:18}}
-        />
-        <CardContent style={{boxShadow:'white'}}>
-        <Typography variant="body2" color="text.secondary" style={{textAlign:'left'}}>
-          wall Decors
-          </Typography>
-          <Typography gutterBottom variant="h6" component="div" fontSize={18} style={{textAlign:'left'}}>
-          Traditional Arts  (50x50)
-          </Typography>
-          <Typography style={{width:"100%",textAlign:'left'}} variant="body2" color="text.secondary">
-           ₹ 2,800
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+    //       component="img"
+    //       height="200"
+    //       image="penmani.png"
+    //       style={{objectFit:'contain',backgroundColor:'#F0D5BA',borderRadius:18}}
+    //     />
+    //     <CardContent style={{boxShadow:'white'}}>
+    //     <Typography variant="body2" color="text.secondary" style={{textAlign:'left'}}>
+    //       wall Decors
+    //       </Typography>
+    //       <Typography gutterBottom variant="h6" component="div" fontSize={18} style={{textAlign:'left'}}>
+    //       Traditional Arts  (50x50)
+    //       </Typography>
+    //       <Typography style={{width:"100%",textAlign:'left'}} variant="body2" color="text.secondary">
+    //        ₹ 2,800
+    //       </Typography>
+    //     </CardContent>
+    //   </CardActionArea>
+    // </Card>
 
 
 
